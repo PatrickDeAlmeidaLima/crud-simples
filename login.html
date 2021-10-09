@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/all.min.css">
+    <link rel="stylesheet" href="css/auth.css">
+    <title>Crud com login</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left">
+            <img src="img/login.jpg" alt="">
+        </div>
+        <div class="right">
+            <h2>Login Account</h2>
+            <div class="input-div">
+                <label for="email">E-mail</label>
+                <input type="email" id="logemail" placeholder="exemplo@gmail.com">
+                <i class="fa fa-envelope"></i>
+            </div>
+            <div class="input-div">
+                <label for="password">Password</label>
+                <input type="password" id="logpassword" placeholder="**************">
+                <i class="fa fa-key"></i>
+            </div>
+            <div class="input-div">
+                <button id="login" onclick="loginUser()">Login</button>
+            </div>
+            <div class="input-div">
+                <p>Don't have an account? <a href="register.html"> Create</a></p>
+                <br />
+                <a href="#">Forgot password?(não funcional)</a>
+            </div>
+        </div>
+    </div>
+    <script src="js/middleware/isAuth.js"></script>
+    <script src="js/auth.js"></script>
+</body>
+
+</html>
